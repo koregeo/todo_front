@@ -1,4 +1,5 @@
 import React from 'react';
+import SingleContent from './SingleContent';
 
 const Content = () => {
 
@@ -10,54 +11,12 @@ const Content = () => {
                 <button className="task-btn">+ New Task</button>
             </div>
             <div className="grid-container">
-                <div className="grid-item">
-                    <div className="single-content">
-                        <div className="cont-notification">
-                            <div className="notification">Due in 3 days</div>
-                            <div className="dots">...</div>
-                        </div>
-                        <div className="header-text">
-                            <h2>Lorem Task Title</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                In sapiente blanditiis expedita adipisci voluptatum debitis, 
-                                optio quaerat fuga. Ab quod animi minima ullam corrupti 
-                                fuga sint magni praesentium aliquam optio!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-item">
-                    <div className="single-content">
-                        <div className="cont-notification">
-                            <div className="notification">Due in 3 days</div>
-                            <div className="dots">...</div>
-                        </div>
-                        <div className="header-text">
-                            <h2>Lorem Task Title</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                In sapiente blanditiis expedita adipisci voluptatum debitis, 
-                                optio quaerat fuga. Ab quod animi minima ullam corrupti 
-                                fuga sint magni praesentium aliquam optio!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-item">
-                    <div className="single-content">
-                        <div className="cont-notification">
-                            <div className="notification">Due in 3 days</div>
-                            <div className="dots">...</div>
-                        </div>
-                        <div className="header-text">
-                            <h2>Lorem Task Title</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                In sapiente blanditiis expedita adipisci voluptatum debitis, 
-                                optio quaerat fuga. Ab quod animi minima ullam corrupti 
-                                fuga sint magni praesentium aliquam optio!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <SingleContent />
+                <SingleContent />
+                <SingleContent />
+                <SingleContent />
+                <SingleContent />
+                <SingleContent />
             </div>
         </section>
     );
