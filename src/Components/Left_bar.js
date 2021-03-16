@@ -9,8 +9,31 @@ const Left_bar = () => {
                 <div className="bar_content_tasks">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
                     <ul>
-                        <li>My Tasks
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>
+                        <li className="mytasks">
+                            <a href="#">My Tasks</a>
+                        </li>
+                        <li>
+                            <a href="#">In Progress</a>
+                        </li>
+                        <li>
+                            <a href="#">Completed</a>
+                        </li>
+                        <li>
+                            <a href="#">Trash</a>
+                        </li>
+                    </ul>
+                      <ul>
+                        <li>
+                            <a href="#"><ion-icon name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
                         </li>
                     </ul>
                 </div>
