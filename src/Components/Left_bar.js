@@ -24,16 +24,16 @@ const Left_bar = () => {
                     </ul>
                       <ul>
                         <li>
-                            <a href="#"><ion-icon name="chevron-down-outline"></ion-icon></a>
+                            <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
                         </li>
                         <li>
-                            <a href="#">5</a>
+                            <a className="task_amounts" href="#">5</a>
                         </li>
                         <li>
-                            <a href="#">1</a>
+                            <a className="task_amounts" href="#">1</a>
                         </li>
                         <li>
-                            <a href="#">6</a>
+                            <a className="task_amounts" href="#">6</a>
                         </li>
                     </ul>
                 </div>

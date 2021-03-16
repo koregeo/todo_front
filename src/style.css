@@ -195,7 +195,7 @@ header {
 
 .bar_content svg {
     width: 50px;
-    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 40px;
 }
 .bar_content_tasks {
@@ -210,13 +210,31 @@ header {
    
 
 }
+.bar_content_tasks li {
+    padding-bottom: 10px;
+
+   
+
+}
 .mytasks {
     font-weight: bold;
+    
 }
 
 .bar_content_tasks a {
     text-decoration: none;
     color: black;
     
+    
 
+}
+
+.task_amounts{
+    background-color: rgb(212, 212, 212);
+    width: 40px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    border-radius: 20%;
+   
 }
