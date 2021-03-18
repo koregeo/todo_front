@@ -8,44 +8,44 @@ function App() {
   const [showCont, setShowCont] = useState(false);
   const [data, setData] = useState({});
   const [log, setLog] = useState(true);
-  const apiCall = async ({userName, password}) => {
+  const apiCall = async ({ userName, password }) => {
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    
+
     const raw = JSON.stringify({
       "email": userName,
       "password": password
     });
-    
+
     const requestOptions = {
       method: 'POST',
       headers: myHeaders,
       body: raw,
       redirect: 'follow'
     };
-    
-   try {
-    const response = await fetch("https://api-nodejs-todolist.herokuapp.com/user/login", requestOptions)
-    const result = await response.json();
-    console.log(response)
-    setData(result.user)
-    setShowCont(true);
-    setLog(false)
-   } catch (error) {
-       console.log(error);
-   }
-}
+
+    try {
+      const response = await fetch("https://1da313a35bfd.ngrok.io/user/login", requestOptions)
+      const result = await response.json();
+      console.log(result)
+      setData(result.user)
+      setShowCont(true);
+      setLog(false)
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 
 
   return (
 
     <div>
-      { log && <TestLog apiCall={apiCall}/>}
-      { showCont && <Header data={data}/> }
+      { log && <TestLog apiCall={apiCall} />}
+      { showCont && <Header data={data} />}
       <div class="main_body">
-        { showCont && <Left_bar />}
+        {showCont && <Left_bar />}
         {showCont && <Content />}
       </div>
     </div>
